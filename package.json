@@ -1,0 +1,17 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "csgoserverbot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander Verkest",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "form-data": "^3.0.0",
+    "node-fetch": "^2.6.1",
+    "pm2": "^4.5.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "BOT_TOKEN": "<your-discord-bot-token-here>",
+    "USER": "<your-username-here>",
+    "PASSWORD": "<your-password-here>",
+    "SERVERID": "<your-serverid-here>"
+}
