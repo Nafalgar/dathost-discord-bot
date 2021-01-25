@@ -35,5 +35,7 @@ Currently there are 4 commands that the bot listens to:
 - `!exec <commands>': Issues commands to the console of your server (i.e. `mp_warmup_end` or `sv_cheats 1`).
 
 Adding new commands is as simple as adding a new command if statement to the code block.
+
 The DatHost API can be found here: https://dathost.net/api
+
 The Discord.js API can be found here: https://discord.js.org/#/docs/main/stable/general/welcome
