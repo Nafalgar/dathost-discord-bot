@@ -12,14 +12,14 @@ You can create an account and rent a CSGO server on DatHost here: https://dathos
 ## Config file
 
 The `config.json` file contains several fields that need to be filled in:
-- `BOT-TOKEN` : This is your Discord bot token that you create on the [Discord developer page]{https://discord.com/developers/applications}.
+- `BOT-TOKEN` : This is your Discord bot token that you create on the [Discord developer page](https://discord.com/developers/applications).
 - `USER`: Your login email for DatHost.
 - `PASSWORD`: Your password for DatHost.
 - `SERVERID`: The ID of the server you wish to issue commands to. You can find this ID by going to the control panel page of your server and copying the ID from the URL. 
 
 ## Installation
 
-- Create a bot on the [Discord developer page]{https://discord.com/developers/applications}.
+- Create a bot on the [Discord developer page](https://discord.com/developers/applications).
 - Add the bot to your Discord server (check out Discord developer documentation for more info).
 - Fill in the config file with the necessary credentials.
 - Install the required packages with `npm install`.
