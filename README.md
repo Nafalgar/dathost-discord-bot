@@ -1,6 +1,7 @@
 # discord-csgo-bot
 
 Simple Node.js app that starts a Discord bot with some basic commands to communicate with the DatHost API to manipulate a dedicated CS:GO server.
+You can create an account and rent a CSGO server on DatHost here: https://dathost.net
 
 ## Requirements
 
