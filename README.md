@@ -14,7 +14,7 @@ The `config.json` file contains several fields that need to be filled in:
 - `BOT-TOKEN` : This is your Discord bot token that you create on the [Discord developer page]{https://discord.com/developers/applications}.
 - `USER`: Your login email for DatHost.
 - `PASSWORD`: Your password for DatHost.
-- `SERVERID`: The ID of the server you wish to issue commands to. You can find this ID by going to the control panel page of your server and copying the ID from the URL. Alternatively, issuing the `!info` command will also list all server ids.
+- `SERVERID`: The ID of the server you wish to issue commands to. You can find this ID by going to the control panel page of your server and copying the ID from the URL. 
 
 ## Installation
 
@@ -31,8 +31,7 @@ Currently there are 4 commands that the bot listens to:
 
 - `!start`: Boots up the server.
 - `!stop`: Shuts down the server.
-- `!exec <commands>': Issues commands to the console of your server (i.e. `mp_warmup_end` or `sv_cheats 1`)
-- `!info`: This gives information about all servers you own on DatHost.
+- `!exec <commands>': Issues commands to the console of your server (i.e. `mp_warmup_end` or `sv_cheats 1`).
 
 Adding new commands is as simple as adding a new command if statement to the code block.
 The DatHost API can be found here: https://dathost.net/api
