@@ -30,7 +30,7 @@ client.on("message", async function(message) {
 		    },
 		    method: 'POST'
 		}).then(checkResponseStatus)
-		.then(message.reply('Starting server...'))
+		.then(message.reply('starting server...'))
 		.then(res => res.json())
     	.then(json => console.log(json))
     	.catch(err => console.log(err))
@@ -43,7 +43,7 @@ client.on("message", async function(message) {
 		    },
 		    method: 'POST'
 		}).then(checkResponseStatus)
-		.then(message.reply('Stopping server...'))
+		.then(message.reply('stopping server...'))
 		.then(res => res.json())
     	.then(json => console.log(json))
     	.catch(err => console.log(err))
@@ -59,7 +59,7 @@ client.on("message", async function(message) {
 		    method: 'POST',
 		    body: formdata
 		}).then(checkResponseStatus)
-		.then(message.reply('Command issued.'))
+		.then(message.reply('command issued.'))
 		.then(res => res.json())
     	.then(json => console.log(json))
     	.catch(err => console.log(err))
