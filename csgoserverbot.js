@@ -24,7 +24,7 @@ client.on("message", async function(message) {
 
   	// Add commands here
   	if (command === 'start') {
-  		const response = fetch(`https://dathost.net/api/0.1/game-servers/${serverid}/start`, {
+  		fetch(`https://dathost.net/api/0.1/game-servers/${serverid}/start`, {
 		    headers: {
 		      	authorization: `Basic ${Buffer.from(`${username}:${password}`).toString('base64')}`,
 		    },
@@ -37,7 +37,7 @@ client.on("message", async function(message) {
   	}
 
   	if (command === 'stop') {
-  		const response = fetch(`https://dathost.net/api/0.1/game-servers/${serverid}/stop`, {
+  		fetch(`https://dathost.net/api/0.1/game-servers/${serverid}/stop`, {
 		    headers: {
 		      	authorization: `Basic ${Buffer.from(`${username}:${password}`).toString('base64')}`,
 		    },
@@ -50,10 +50,9 @@ client.on("message", async function(message) {
   	}
 
   	if (command === 'exec') {
-  		strArgs = args.join(' ');
-  		var formdata = new FormData();
-		formdata.append("line", strArgs);
-  		const response = fetch(`https://dathost.net/api/0.1/game-servers/${serverid}/console`, {
+  		let formdata = new FormData();
+		formdata.append("line", args.join(' '));
+  		fetch(`https://dathost.net/api/0.1/game-servers/${serverid}/console`, {
 		    headers: {
 		      	authorization: `Basic ${Buffer.from(`${username}:${password}`).toString('base64')}`,
 		    },
@@ -67,13 +66,13 @@ client.on("message", async function(message) {
   	}                
 });   
 
-client.login(config.BOT_TOKEN);
+client.login(config.BOT_TOKEN).then(() => console.log('Logged in successfully with bot token.'));
 
-// Returns error if status reponse is not OK
+// Returns error if status response is not OK
 function checkResponseStatus(res) {
     if(res.ok){
         return res
     } else {
-        throw new Error(`The HTTP status of the reponse: ${res.status} (${res.statusText})`);
+        throw new Error(`The HTTP status of the response: ${res.status} (${res.statusText})`);
     }
 }
