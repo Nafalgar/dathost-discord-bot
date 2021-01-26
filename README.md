@@ -32,7 +32,7 @@ Currently there are 4 commands that the bot listens to:
 
 - `!start`: Boots up the server.
 - `!stop`: Shuts down the server.
-- `!exec <commands>': Issues commands to the console of your server (i.e. `mp_warmup_end` or `sv_cheats 1`).
+- `!exec <commands>`: Issues commands to the console of your server (i.e. `mp_warmup_end` or `sv_cheats 1`).
 
 Adding new commands is as simple as adding a new command if statement to the code block.
 
